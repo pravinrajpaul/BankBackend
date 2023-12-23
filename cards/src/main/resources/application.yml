@@ -1,0 +1,19 @@
+application:
+  basePath: api/v1
+
+server:
+    port: 1235
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:cardsDB
+    driver-class-name: org.h2.Driver
+    username: cdb
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    generate-ddl: true
+  h2:
+    console:
+      enabled: true
